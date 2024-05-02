@@ -2,6 +2,10 @@ class script(object):
     START_TXT = """<b>Hello {}, <i>{}</i> 👋🏻 Oka vela movie lekapothe just follow our update channel 👇🏻❤️🥰.... Danilo discussion channel lo miku nachina movies adagochu...👇🏻👇🏻
 @TCH_UPDATES♻️</b>"""
     
+    MY_ABOUT_TXT = """★ Server: <a href=https://www.heroku.com>Heroku</a>
+★ Database: <a href=https://www.mongodb.com>MongoDB</a>
+★ Language: <a href=https://www.python.org>Python</a>
+★ Library: <a href=https://pyrogram.org>Pyrogram</a>"""
 
     MY_OWNER_TXT = """★ Name: Telugu Movies Adda Support 
 ★ Username: @TeluguMoviesAddaSupport_bot
