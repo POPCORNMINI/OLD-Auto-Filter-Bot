@@ -17,17 +17,17 @@ def is_valid_ip(ip):
     return re.match(ip_pattern, ip) is not None
 
 # Bot information
-API_ID = environ.get('API_ID', '24987357')  #api id of your telegram id
+API_ID = environ.get('API_ID', '25031011')  #api id of your telegram id
 if len(API_ID) == 0:
     print('Error - API_ID is missing, exiting now')
     exit()
 else:
     API_ID = int(API_ID)
-API_HASH = environ.get('API_HASH', '9fa61976cf33bceaa4e8b2ee4ba90ab3') #api hash of your telegram id
+API_HASH = environ.get('API_HASH', '3b1df9ac870a40711763bf0c062f2282') #api hash of your telegram id
 if len(API_HASH) == 0:
     print('Error - API_HASH is missing, exiting now')
     exit()
-BOT_TOKEN = environ.get('BOT_TOKEN', '6800070648:AAFErzpAu66MJSwaJ-wqgCoSgAnZxUdpvrI') #bot token from botfather
+BOT_TOKEN = environ.get('BOT_TOKEN', '7150451632:AAGoLSuyNAf1HtMlE1mFqnhD40EZMv4PqeY') #bot token from botfather
 if len(BOT_TOKEN) == 0:
     print('Error - BOT_TOKEN is missing, exiting now')
     exit()
@@ -37,7 +37,7 @@ PORT = int(environ.get('PORT', '80')) #don't change anything
 PICS = (environ.get('PICS', 'https://graph.org/file/79b12626fe362b2454697.jpg')).split()
 
 # Bot Admins
-ADMINS = environ.get('ADMINS', '5163334858') #apni tg id daalo
+ADMINS = environ.get('ADMINS', '1977483811') #apni tg id daalo
 if len(ADMINS) == 0:
     print('Error - ADMINS is missing, exiting now')
     exit()
@@ -49,10 +49,10 @@ else:
 INDEX_CHANNELS = [int(index_channels) if index_channels.startswith("-") else index_channels for index_channels in environ.get('INDEX_CHANNELS', '-1002038424519').split()]
 if len(INDEX_CHANNELS) == 0:
     print('Info - INDEX_CHANNELS is empty')
-AUTH_CHANNEL = [int(auth_channels) for auth_channels in environ.get('AUTH_CHANNEL', '-1001931378493').split()]
+AUTH_CHANNEL = [int(auth_channels) for auth_channels in environ.get('AUTH_CHANNEL', '-1001358003440').split()]
 if len(AUTH_CHANNEL) == 0:
     print('Info - AUTH_CHANNEL is empty')
-LOG_CHANNEL = environ.get('LOG_CHANNEL', '-1002009771710') #bot log channel -1005293546253
+LOG_CHANNEL = environ.get('LOG_CHANNEL', '-1002077107556') #bot log channel -1005293546253
 if len(LOG_CHANNEL) == 0:
     print('Error - LOG_CHANNEL is missing, exiting now')
     exit()
@@ -61,7 +61,7 @@ else:
 IS_FSUB = is_enabled('IS_FSUB', True)
 
 # support group
-SUPPORT_GROUP = environ.get('SUPPORT_GROUP', '-1002090202719') #support group id ex:  -1002936246860
+SUPPORT_GROUP = environ.get('SUPPORT_GROUP', '-1002076276607') #support group id ex:  -1002936246860
 if len(SUPPORT_GROUP) == 0:
     print('Error - SUPPORT_GROUP is missing, exiting now')
     exit()
@@ -69,7 +69,7 @@ else:
     SUPPORT_GROUP = int(SUPPORT_GROUP)
 
 # MongoDB information
-DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://kondaiddum:vinny%4045@cluster0.1ny6uq5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") #mongo db url
+DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://tmabot:7032572211@cluster0.anb5qjh.mongodb.net/?retryWrites=true&w=majority") #mongo db url
 if len(DATABASE_URL) == 0:
     print('Error - DATABASE_URL is missing, exiting now')
     exit()
@@ -77,9 +77,9 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 
 # Links
-SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/shin_chan_mam')
-UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/shin_chan_mamma')
-FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/filesearchsm')
+SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/TCh_Updates')
+UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/teluguchub')
+FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/tchsupport')
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/c/2055901089/956")
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/filesearchsm")
 
@@ -114,7 +114,7 @@ PAYMENT_QR = environ.get('PAYMENT_QR', 'https://graph.org/file/79b12626fe362b245
 
 # for stream
 IS_STREAM = is_enabled('IS_STREAM', True) #true if you want stream feature active in your bot
-BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1002121777662") #if is_stream = true then add a channel id ex: -10026393639
+BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1002109079744") #if is_stream = true then add a channel id ex: -10026393639
 if len(BIN_CHANNEL) == 0:
     print('Error - BIN_CHANNEL is missing, exiting now')
     exit()
