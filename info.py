@@ -34,7 +34,7 @@ if len(BOT_TOKEN) == 0:
 PORT = int(environ.get('PORT', '80')) #don't change anything 
 
 # Bot pics
-PICS = (environ.get('PICS', 'https://graph.org/file/79b12626fe362b2454697.jpg')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/2a6b7974741adf257539b.jpg')).split()
 
 # Bot Admins
 ADMINS = environ.get('ADMINS', '1977483811') #apni tg id daalo
@@ -110,7 +110,7 @@ IMDB = is_enabled('IMDB', True)
 SPELL_CHECK = is_enabled("SPELL_CHECK", True)
 SHORTLINK = is_enabled('SHORTLINK', False)
 
-PAYMENT_QR = environ.get('PAYMENT_QR', 'https://graph.org/file/79b12626fe362b2454697.jpg') #telegraph link of your QR code , make from @professormp_bot
+PAYMENT_QR = environ.get('PAYMENT_QR', 'https://graph.org/file/2a6b7974741adf257539b.jpg') #telegraph link of your QR code , make from @professormp_bot
 
 # for stream
 IS_STREAM = is_enabled('IS_STREAM', True) #true if you want stream feature active in your bot
